@@ -1,0 +1,73 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:0;
+}
+
+h1 {
+    text-align:center;
+}
+
+h2 {
+    font-size:3em;    
+    font-family: 'Great Vibes', cursive;
+    color:black;    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #761c08 ;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive;
+    font-size:1.3em;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #c4b592  ;
+  }
+
+.wrapper {
+    padding-top:50px;
+    width:100%;
+    background-image: url('images/bann.jpg');
+    height: 150px;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed; 
+}
+
+.title {
+    margin-bottom:auto;
+    margin-top:auto;
+    font-size:5em;    
+    font-family: 'Great Vibes', cursive;
+    color:white;    
+}
+
+.content {
+    background-color :#f0eada ;
+    margin-top:-32px;
+}
+
+.table {
+    width:100%;
+}
