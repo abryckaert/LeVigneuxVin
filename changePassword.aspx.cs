@@ -13,6 +13,6 @@ public partial class Default2 : System.Web.UI.Page
     }
     protected void ChangePassword1_ChangedPassword(object sender, EventArgs e)
     {
-
+    
     }
 }
