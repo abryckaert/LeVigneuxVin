@@ -9,14 +9,11 @@
                <li><a href="Default.aspx">Home</a></li>
                <li><a href="#OurVines">Our vines</a></li>
                <li><a href="#contact">Contact a vignoble</a></li>
-               <li style="float:right"><a class="active" href="login.aspx">Login</a></li>
+               <li style="float:right"><a class="active" href="public\login.aspx">Login</a></li>
             </ul> 
         </div>
     <div class="wrapper">
         <h1 class="title">Le Vigneux Vin</h1>
-        <title>
-            Le Vigneux 
-        </title>
     </div>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
