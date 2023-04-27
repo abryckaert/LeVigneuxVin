@@ -21,12 +21,13 @@ public partial class _Default : System.Web.UI.Page
 
     private void LoadImages()
     {
-        string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+        string cs = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
         using (SqlConnection con = new SqlConnection(cs))
         {
             SqlCommand cmd = new SqlCommand("Select * from tblImages", con);
             con.Open();
             SqlDataReader rdr = cmd.ExecuteReader();
+
             GridView1.DataSource = rdr;
             GridView1.DataBind();
         }

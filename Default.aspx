@@ -1,11 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:DataList ID="DataList1" runat="server" DataKeyField="name" DataSourceID="SqlDataSource1">
-        <ItemTemplate>
-            <h2>Top vines 2023 :</h2>
+=            <h2>Top vines 2023 :</h2>
             <table>
                 <tr>
                     <td>
@@ -43,9 +41,11 @@
                     </td>
                 </tr>
             </table>
-        </ItemTemplate>
-    </asp:DataList>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT TOP 3  * FROM vine 
 ORDER BY &quot;rank&quot; DESC;"></asp:SqlDataSource>
+
+
+
+
 </asp:Content>
 
