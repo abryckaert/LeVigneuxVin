@@ -11,7 +11,8 @@ h1 {
 }
 
 h2 {
-    font-size:3em;    
+    font-size:3em;   
+    padding-left:3%; 
     font-family: 'Great Vibes', cursive;
     color:black;    
 }
@@ -74,4 +75,8 @@ ul {
 
 .imageVine {
     width:20px;
+}
+
+.Top3array {
+    background-color:red;
 }

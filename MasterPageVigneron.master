@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageVigneron.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <div>
+            <ul>
+               <li><a href="Default.aspx">Home</a></li>
+               <li><a href="myVine.aspx">My vines</a></li>
+               <li><a href="#contact">Comments</a></li>
+               <li style="float:right"><a id="user" class="active" href="profil.aspx"><asp:LoginName runat="server"></asp:LoginName></a></li>
+            </ul> 
+        </div>
+    <div class="wrapper">
+        <h1 class="title">Le Vigneux Vin</h1>
+    </div>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="content">  
+        <form id="form1" runat="server">                  
+            <div>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+    
+                </asp:ContentPlaceHolder>
+            </div>            
+        </form>
+    </div>
+</body>
+</html>
