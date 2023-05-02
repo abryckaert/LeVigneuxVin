@@ -1,6 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageVigneron.master.cs" Inherits="MasterPage2" %>
-
-<!DOCTYPE html>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageVigneron.master.cs" Inherits="MasterPageVigneron" %>
 
 <!DOCTYPE html>
 
@@ -9,7 +7,7 @@
     <div>
             <ul>
                <li><a href="Default.aspx">Home</a></li>
-               <li><a href="myVine.aspx">My vines</a></li>
+               <li><a href="myVine.aspx">My vines</a></li>              
                <li><a href="#contact">Comments</a></li>
                <li style="float:right"><a id="user" class="active" href="profil.aspx"><asp:LoginName runat="server"></asp:LoginName></a></li>
             </ul> 
