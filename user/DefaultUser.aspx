@@ -4,8 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h2 style="padding-top:2%; padding-left:2%;">Top vines 2023 :</h2>
-        <a href="AddVine.aspx" style="position:fixed;width:250px;height:50px;bottom:40px;right:40px;background-color:#a92307;color:#FFF;border-radius:50px;text-align:center; box-shadow: 2px 2px 3px #999;">
-        <i class="fa fa-plus my-float" style="margin-top:22px; font-size:2em;">Add a new vine</i>
+        <a href="AddComments.aspx" style="position:fixed;width:250px;height:80px;bottom:40px;right:40px;background-color:#a92307;color:#FFF;border-radius:50px;text-align:center; box-shadow: 2px 2px 3px #999;">
+        <i class="fa fa-plus my-float" style="margin-top:22px; font-size:2em;">Add comment to a vine</i>
         </a>
         <table style="padding-left:5%; margin-top:-3%; width:70%;">
             <tr>
@@ -158,9 +158,7 @@ WHERE rank = 6;"></asp:SqlDataSource>
             </tr>
         </table>
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server"
-            ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT TOP 3 * FROM vine 
-ORDER BY rank;">
-
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT TOP 3 * FROM vine ORDER BY rank;">
+        </asp:SqlDataSource>
 </asp:Content>
 
