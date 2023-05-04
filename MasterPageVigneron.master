@@ -8,7 +8,7 @@
             <ul>
                <li><a href="Default.aspx">Home</a></li>
                <li><a href="mywine.aspx">My wines</a></li>              
-               <li><a href="#contact">Comments</a></li>
+               <li><a href="myComments.aspx">Comments</a></li>
                <li style="float:right"><a id="user" class="active" href="profil.aspx"><asp:LoginName runat="server"></asp:LoginName></a></li>
             </ul> 
         </div>

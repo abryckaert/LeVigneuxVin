@@ -9,8 +9,7 @@
     <tr>
         <td style="width: 287px; height: 26px; text-align: right">Name : </td>
         <td style="height: 26px; width: 483px">
-            <asp:DropDownList ID="wineName" runat="server" DataSourceID="SqlDataSource1" DataTextField="name" DataValueField="name">
-            </asp:DropDownList>
+            <asp:TextBox ID="wineName" runat="server"></asp:TextBox>
         </td>
     </tr>
     <tr>

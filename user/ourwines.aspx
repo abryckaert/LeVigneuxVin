@@ -4,6 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h2>Our wines :</h2> 
+    <a href="AddComments.aspx" style="position:fixed;width:250px;height:50px;bottom:40px;right:40px;background-color:#a92307;color:#FFF;border-radius:50px;text-align:center; box-shadow: 2px 2px 3px #999;">
+        <i class="fa fa-plus my-float" style="margin-top:22px; font-size:2em;">Add comment</i></a>
     <table style="width:70%;">
         <tr>
             <td style="text-align:center; vertical-align: top;">                
