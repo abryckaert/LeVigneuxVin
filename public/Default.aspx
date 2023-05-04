@@ -3,7 +3,7 @@
     <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     </asp:Content>
     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-        <h2 style="padding-top:2%; padding-left:2%;">Top vines 2023 :</h2>
+        <h2 style="padding-top:2%; padding-left:2%;">Top wines 2023 :</h2>
         <table style="padding-left:5%; margin-top:-3%; width:70%;">
             <tr>
                 <td style="text-align:center;">
@@ -69,7 +69,7 @@
                                     </ItemTemplate>
                                 </asp:DataList>
                                 <asp:SqlDataSource ID="SqlDataSource2" runat="server"
-                                    ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM vine 
+                                    ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM wine 
 WHERE rank = 4;"></asp:SqlDataSource>
                             </td>
                         </tr>
@@ -107,7 +107,7 @@ WHERE rank = 4;"></asp:SqlDataSource>
                                     </ItemTemplate>
                                 </asp:DataList>
                                 <asp:SqlDataSource ID="SqlDataSource3" runat="server"
-                                    ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM vine 
+                                    ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM wine 
 WHERE rank = 5;"></asp:SqlDataSource>
                             </td>
                         </tr>
@@ -146,7 +146,7 @@ WHERE rank = 5;"></asp:SqlDataSource>
                                     </ItemTemplate>
                                 </asp:DataList>
                                 <asp:SqlDataSource ID="SqlDataSource4" runat="server"
-                                    ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM vine 
+                                    ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM wine 
 WHERE rank = 6;"></asp:SqlDataSource>
                             </td>
                         </tr>
@@ -156,7 +156,7 @@ WHERE rank = 6;"></asp:SqlDataSource>
         </table>
 
         <asp:SqlDataSource ID="SqlDataSource1" runat="server"
-            ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT TOP 3 * FROM vine 
+            ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT TOP 3 * FROM wine 
 ORDER BY rank;"></asp:SqlDataSource>
 
     </asp:Content>  

@@ -6,12 +6,12 @@
     <h2>Add comment :</h2>
     <table style="width: 44%; height: 166px">
         <tr>
-        <td style="width: 287px; height: 26px; text-align: right">Vine name : </td>
+        <td style="width: 287px; height: 26px; text-align: right">wine name : </td>
         <td style="height: 26px; width: 483px">
 
             <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="name" DataValueField="name">
             </asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [name] FROM [vine]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [name] FROM [wine]"></asp:SqlDataSource>
 
         </td>
     </tr>

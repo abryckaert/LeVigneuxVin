@@ -30,7 +30,7 @@ public partial class myComments : System.Web.UI.Page
         using (SqlConnection con = new SqlConnection(cs))
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT reviewTitle, vineName ,description, score, userNickname FROM review WHERE userNickname = @username", con);
+            SqlCommand cmd = new SqlCommand("SELECT reviewTitle, wineName ,description, score, userNickname FROM review WHERE userNickname = @username", con);
             cmd.Parameters.AddWithValue("@username", userName);
             SqlDataReader rdr = cmd.ExecuteReader();
             GridView1.DataSource = rdr;

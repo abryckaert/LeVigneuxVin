@@ -7,8 +7,8 @@
     <div>
             <ul>
                <li><a href="Default.aspx">Home</a></li>
-               <li><a href="ourVines.aspx">Our vines</a></li>
-               <li><a href="#contact">Contact a vignoble</a></li>
+               <li><a href="ourWines.aspx">Our wines</a></li>
+               <li><a href="#contact">Contact a vigneron</a></li>
                <li style="float:right"><a class="active" href="login.aspx">Login</a></li>
             </ul> 
         </div>

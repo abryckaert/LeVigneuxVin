@@ -18,7 +18,7 @@ public partial class AddComments : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        string vineName = DropDownList1.Text;
+        string wineName = DropDownList1.Text;
         string decription = description.Text;
         string rate = RadioButtonList1.Text;
         string reviewTitle = title.Text;
@@ -39,16 +39,16 @@ public partial class AddComments : System.Web.UI.Page
         using (SqlConnection con = new SqlConnection(cs))
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO review (reviewTitle, vineName ,description, score, userNickname) VALUES (@reviewTitle, @vineName, @decription, @rate, @username)", con);
+            SqlCommand cmd = new SqlCommand("INSERT INTO review (reviewTitle, wineName ,description, score, userNickname) VALUES (@reviewTitle, @wineName, @decription, @rate, @username)", con);
             cmd.Parameters.AddWithValue("@reviewTitle", reviewTitle);
-            cmd.Parameters.AddWithValue("@vineName", vineName);
+            cmd.Parameters.AddWithValue("@wineName", wineName);
             cmd.Parameters.AddWithValue("@decription", decription);
             cmd.Parameters.AddWithValue("@rate", rate);
             cmd.Parameters.AddWithValue("@username", userName);
 
             cmd.ExecuteNonQuery();
             submited.Visible = true;
-            submited.Text = "Your vine has been submited";
+            submited.Text = "Your wine has been submited";
             description.Text ="";
             RadioButtonList1.Text="";
             title.Text ="";

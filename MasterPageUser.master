@@ -7,7 +7,7 @@
     <div>
             <ul>
                <li><a href="DefaultUser.aspx">Home</a></li>
-               <li><a href="ourVines.aspx">Our Vines</a></li>              
+               <li><a href="ourwines.aspx">Our wines</a></li>              
                <li><a href="myComments.aspx">My comments</a></li>
                <li style="float:right"><a id="user" class="active" href="profil.aspx"><asp:LoginName runat="server"></asp:LoginName></a></li>
             </ul> 

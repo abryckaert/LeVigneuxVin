@@ -7,7 +7,7 @@
     <div>
             <ul>
                <li><a href="DefaultAdmin.aspx">Home</a></li>
-               <li><a href="adminVine.aspx">Manage vines</a></li>
+               <li><a href="adminWine.aspx">Manage wines</a></li>
                <li><a href="adminComments.aspx">Manage comments</a></li>
                <li><a href="adminUsers.aspx">Manage users</a></li>
                <li style="float:right"><a id="user" class="active" href="profilAdmin.aspx"><asp:LoginName runat="server"></asp:LoginName></a></li>

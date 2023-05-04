@@ -30,7 +30,7 @@ public partial class myComments : System.Web.UI.Page
         using (SqlConnection con = new SqlConnection(cs))
         {
 
-            SqlCommand cmd = new SqlCommand("SELECT vineName ,review.reviewTitle, review.description, review.userNickname, review.score from review INNER JOIN vine ON vine.name = review.vineName WHERE vine.vigneronName = @userName;", con);
+            SqlCommand cmd = new SqlCommand("SELECT wineName ,review.reviewTitle, review.description, review.userNickname, review.score from review INNER JOIN wine ON wine.name = review.wineName WHERE wine.vigneronName = @userName;", con);
             cmd.Parameters.AddWithValue("@userName", userName);
             con.Open();
             SqlDataReader rdr = cmd.ExecuteReader();
